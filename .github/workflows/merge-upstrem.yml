@@ -1,8 +1,8 @@
 name: Merge upstream branches
 on:
+  workflow_dispatch:
   push:
   schedule:
-     workflow_dispatch:
      # actually, ~5 minutes is the highest
      # effective frequency you will get
     - cron:  '0 1 * * *'
